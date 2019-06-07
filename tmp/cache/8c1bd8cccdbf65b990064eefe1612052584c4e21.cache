@@ -1,0 +1,70 @@
+<?php return array (
+  'lifetime' => 0,
+  'data' => 
+  array (
+    'class' => 'Bixie\\Formmaker\\Model\\Submission',
+    'eventPrefix' => 'formmaker_submission',
+    'events' => 
+    array (
+    ),
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'integer',
+        'id' => true,
+        'column' => 'id',
+      ),
+      'status' => 
+      array (
+        'name' => 'status',
+        'type' => 'integer',
+        'column' => 'status',
+      ),
+      'form_id' => 
+      array (
+        'name' => 'form_id',
+        'type' => 'integer',
+        'column' => 'form_id',
+      ),
+      'email' => 
+      array (
+        'name' => 'email',
+        'type' => 'string',
+        'column' => 'email',
+      ),
+      'ip' => 
+      array (
+        'name' => 'ip',
+        'type' => 'string',
+        'column' => 'ip',
+      ),
+      'created' => 
+      array (
+        'name' => 'created',
+        'type' => 'datetime',
+        'column' => 'created',
+      ),
+      'data' => 
+      array (
+        'name' => 'data',
+        'type' => 'json_array',
+        'column' => 'data',
+      ),
+    ),
+    'isMappedSuperclass' => false,
+    'relations' => 
+    array (
+      'form' => 
+      array (
+        'name' => 'form',
+        'type' => 'BelongsTo',
+        'targetEntity' => 'Bixie\\Formmaker\\Model\\Form',
+        'keyFrom' => 'form_id',
+        'keyTo' => NULL,
+      ),
+    ),
+    'table' => '@formmaker_submission',
+  ),
+);

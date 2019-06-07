@@ -1,0 +1,20 @@
+{
+    "name": "sam/theme-SAM",
+    "type": "pagekit-theme",
+    "version": "1.0.0",
+    "title": "SAM",
+    "description": "Samiscoding.com main theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Samer Alotaibii",
+            "email": "sam@samiscoding.com",
+            "homepage": "https://samiscoding.com"
+        }
+    ],
+    "require": {
+        "mailgun/mailgun-php": "^2.6",
+        "php-http/curl-client": "^1.7",
+        "guzzlehttp/psr7": "^1.4"
+      }
+}

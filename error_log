@@ -1,0 +1,93 @@
+[17-Oct-2018 22:35:44 UTC] PHP Warning:  require(/home/qpngbch06hxg/public_html/app/vendor/swiftmailer/swiftmailer/lib/classes/Swift.php): failed to open stream: No such file or directory in /home/qpngbch06hxg/public_html/app/vendor/swiftmailer/swiftmailer/lib/swift_required.php on line 20
+[17-Oct-2018 22:35:44 UTC] PHP Fatal error:  require(): Failed opening required '/home/qpngbch06hxg/public_html/app/vendor/swiftmailer/swiftmailer/lib/classes/Swift.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/qpngbch06hxg/public_html/app/vendor/swiftmailer/swiftmailer/lib/swift_required.php on line 20
+[06-Nov-2018 06:08:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#1 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#2 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#3 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(833): Doctrine\DBAL\Connection->connect()
+#4 /home/qpngbch06hxg/public_html/app/mod in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[15-Nov-2018 04:19:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#1 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#2 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#3 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(833): Doctrine\DBAL\Connection->connect()
+#4 /home/qpngbch06hxg/public_html/app/mod in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[23-Nov-2018 01:12:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#1 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#2 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#3 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(833): Doctrine\DBAL\Connection->connect()
+#4 /home/qpngbch06hxg/public_html/app/mod in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[23-Nov-2018 15:35:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'waiting for initial communication packet', system error: 110 in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#1 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#2 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#3 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(833): Doctrine\DBAL\Connection->connect()
+#4 /home/qpngbch06hxg/publi in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 115
+[23-Nov-2018 16:14:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#1 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#2 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#3 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(833): Doctrine\DBAL\Connection->connect()
+#4 /home/qpngbch06hxg/public_html/app/mod in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[23-Nov-2018 17:40:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#1 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#2 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#3 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(833): Doctrine\DBAL\Connection->connect()
+#4 /home/qpngbch06hxg/public_html/app/mod in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[23-Nov-2018 17:40:28 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#1 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#2 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#3 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(833): Doctrine\DBAL\Connection->connect()
+#4 /home/qpngbch06hxg/public_html/app/mod in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[27-Nov-2018 12:31:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'samiscoding_app'@'localhost' (using password: YES) in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#1 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#2 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#3 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(833): Doctrine\DBAL\Connection->connect()
+#4 /home/qpngbch06hxg/public_html/app/modules/dat in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[27-Nov-2018 12:32:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'samiscoding_app'@'localhost' (using password: YES) in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#1 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#2 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#3 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(833): Doctrine\DBAL\Connection->connect()
+#4 /home/qpngbch06hxg/public_html/app/modules/dat in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[27-Nov-2018 12:50:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'samiscoding_app'@'localhost' (using password: YES) in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#1 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#2 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#3 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(833): Doctrine\DBAL\Connection->connect()
+#4 /home/qpngbch06hxg/public_html/app/modules/dat in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[16-Dec-2018 06:06:12 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (111) in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#1 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#2 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#3 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(833): Doctrine\DBAL\Connection->connect()
+#4 /home/qpngbch06hxg/public_html/app/m in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[20-Dec-2018 16:06:48 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#1 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#2 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#3 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(833): Doctrine\DBAL\Connection->connect()
+#4 /home/qpngbch06hxg/public_html/app/mod in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[21-Dec-2018 04:16:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 95 in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#1 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#2 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'samiscoding_app', 'zUy6JMpRWVn6', Array)
+#3 /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(833): Doctrine\DBAL\Connection->connect()
+#4 /home/qpngbch06hxg/public_htm in /home/qpngbch06hxg/public_html/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 115
