@@ -21,7 +21,6 @@
 
         <?php $view->script('modernizr', 'theme:js/modernizr.js') ?>
         <?php $view->script('pace', 'theme:js/pace.min.js') ?>
-        <?php $view->script('theme', 'theme:js/theme.js') ?>
         
         <!-- favicons
         ================================================== -->
@@ -126,6 +125,7 @@
         <?= $view->render('footer') ?>
         <?php $view->script('jQuery', 'packages/sam/theme-SAM/js/jquery-3.3.1.min.js', []) ?>
         <?php $view->script('plugins', 'packages/sam/theme-SAM/js/plugins.js', [], ['defer' => true]) ?>
+        <?php $view->script('theme', 'theme:js/theme.js') ?>
         <?php $view->script('util', 'theme:js/util.js') ?>
         <?php $view->script('popover', 'theme:js/popover.js') ?>
         <?php $view->script('modal', 'theme:js/modal.js') ?>

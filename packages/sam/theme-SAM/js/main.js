@@ -401,11 +401,6 @@
     };
 
 
-    var samModal = function() {
-            $('#btn-modal').click(function() {
-                $('#myModal').modal('show');
-        });
-    }
 
    /* Back to Top
     * ------------------------------------------------------ */
@@ -414,7 +409,7 @@
         var pxShow  = 500,         // height on which the button will show
         fadeInTime  = 400,         // how slow/fast you want the button to show
         fadeOutTime = 400,         // how slow/fast you want the button to hide
-        scrollSpeed = 300,         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
+        scrollSpeed = 'fast',         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
         goTopButton = $(".go-top")
         
         // Show or hide the sticky footer button
@@ -445,8 +440,6 @@
         clAOS();
         clAjaxChimp();
         clBackToTop();
-        samModal();
-
     })();
         
         
