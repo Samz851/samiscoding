@@ -87,7 +87,9 @@ class PortfolioImageHelper extends Helper {
 
 			if (!file_exists($cachepath)) {
 
-				$image = new SimpleImage(App::path() . '/' . $source);
+
+
+				$image = new \abeautifulsite\SimpleImage(App::path() . '/' . $source);
 
 				if (!empty($options['width']) && empty($options['height'])) {
 					$image->fit_to_width($options['width']);
