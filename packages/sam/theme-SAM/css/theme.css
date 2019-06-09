@@ -108,6 +108,9 @@
 
 
 /* PORTFOLIO STYLES */
+#contactModal textarea#contactMessage {
+    min-height: 15rem;
+}
 body {
     font-family: "montserrat-medium", sans-serif;
 }
