@@ -1,20 +1,19 @@
 {
-    "name": "sam/theme-SAM",
-    "type": "pagekit-theme",
-    "version": "1.0.0",
-    "title": "SAM",
+    "name": "sam/theme-sam",
     "description": "Samiscoding.com main theme",
-    "license": "MIT",
+    "type": "pagekit-theme",
     "authors": [
         {
-            "name": "Samer Alotaibii",
-            "email": "sam@samiscoding.com",
-            "homepage": "https://samiscoding.com"
+            "name": "Samer Alotaibi",
+            "email": "sam.otb@hotmail.ca"
         }
     ],
     "require": {
-        "mailgun/mailgun-php": "^2.6",
-        "php-http/curl-client": "^1.7",
-        "guzzlehttp/psr7": "^1.4"
-      }
+        "mailgun/mailgun-php": "^2.8",
+        "php-http/message": "^1.7",
+        "guzzlehttp/psr7": "^1.5",
+        "psr/http-message": "^1.0",
+        "kriswallsmith/buzz": "^1.0",
+        "nyholm/psr7": "^1.1"
+    }
 }
