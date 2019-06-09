@@ -45,7 +45,7 @@ if($_POST) {
 
 
 
-    if (!$error) {
+    if (isset($error)) {
         try{
             $mail = $mg->messages()->send('mg.samiscoding.com', [
                 'from'    => 'lead@samiscoding.com',
