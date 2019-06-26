@@ -24,42 +24,42 @@
 <?php 
 // VARS
 
-$shareURL =  $app['url']->current(0);
+$shareURL =  $app['url']->current(0) .'/';
 $shareTitle = $post->title;
 ?>
         <div id="share-buttons-grid">
                  <!-- Buffer -->
-                <a href="https://bufferapp.com/add?url=<?= $shareURL ?>&amp;text=<?= $shareTitle ?>" target="_blank">
+                <a href="https://bufferapp.com/add?url=<?= $shareURL . $post->slug . $post->slug ?>&amp;text=<?= $shareTitle ?>" target="_blank">
                     <img src="https://simplesharebuttons.com/images/somacro/buffer.png" alt="Buffer" />
                 </a>
                 
                 <!-- Digg -->
-                <a href="http://www.digg.com/submit?url=<?= $shareURL ?>" target="_blank">
+                <a href="http://www.digg.com/submit?url=<?= $shareURL . $post->slug ?>" target="_blank">
                     <img src="https://simplesharebuttons.com/images/somacro/diggit.png" alt="Digg" />
                 </a>
                 
                 <!-- Email -->
-                <a href="mailto:?Subject=<?= $post->title ?>&amp;Body=Don't miss out on this article <?= $post->title ?> @ <?= $shareURL ?>">
+                <a href="mailto:?Subject=<?= $post->title ?>&amp;Body=Don't miss out on this article <?= $post->title ?> @ <?= $shareURL . $post->slug ?>">
                     <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
                 </a>
             
                 <!-- Facebook -->
-                <a href="http://www.facebook.com/sharer.php?u=<?= $shareURL ?>" target="_blank">
+                <a href="http://www.facebook.com/sharer.php?u=<?= $shareURL . $post->slug ?>" target="_blank">
                     <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
                 </a>
                 
                 <!-- Google+ -->
-                <a href="https://plus.google.com/share?url=<?= $shareURL ?>" target="_blank">
+                <a href="https://plus.google.com/share?url=<?= $shareURL . $post->slug ?>" target="_blank">
                     <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
                 </a>
                 
                 <!-- LinkedIn -->
-                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?= $shareURL ?>" target="_blank">
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?= $shareURL . $post->slug ?>" target="_blank">
                     <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
                 </a>
                 
                 <!-- Twitter -->
-                <a href="https://twitter.com/share?url=<?= $shareURL ?>&amp;text=<?= $post->title ?>" target="_blank">
+                <a href="https://twitter.com/share?url=<?= $shareURL . $post->slug ?>&amp;text=<?= $post->title ?>" target="_blank">
                     <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
                 </a>
             </div>
