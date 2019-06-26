@@ -339,3 +339,6 @@ div#share-buttons {
 .uk-margin {
     margin-top: 30px;
 }
+#share-buttons-grid a img {
+    max-width: 40px;
+}
