@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Web and App Development">
         <meta name="author" content="Samer Alotaibi">
+         <meta property="fb:app_id" content="493683984705461">
         <?= $view->render('head') ?>
-        <!-- CSS 
-        ================================================== -->
+        <!-- CSS  -->
         <?php $view->style('bootstrap', 'theme:css/bootstrap.min.css') ?>
         <?php $view->style('base', 'theme:css/base.css') ?>
         <?php $view->style('fonts', 'theme:css/fonts.css') ?>
@@ -64,10 +64,10 @@
             'send_to': 'AW-963596061',
             'user_id': 'replace with value'
         });
-        </script>
+        </script> -->
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125594266-1"></script>
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125594266-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -103,7 +103,6 @@
                 <span class="header-menu-icon"></span>
             </a>
         </header> <!-- end s-header -->
-
 
         <!-- Render content -->
         <section>
