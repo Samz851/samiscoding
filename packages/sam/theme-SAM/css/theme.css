@@ -327,3 +327,15 @@ article.uk-article.sam-posts-grid-item {
     padding-top: 80px;
     text-align: center;
 }
+div#share-buttons {
+    max-width: 600px;
+    display: inline;
+    padding-top: 15px;
+}
+.uk-article-meta {
+    max-width: 50%;
+    display: inline;
+}
+.uk-margin {
+    margin-top: 30px;
+}
