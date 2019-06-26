@@ -237,7 +237,7 @@ article#portfolio-project > h1 {
     color: white;
 }
 #contactModal {
-    position: fixed;
+    position: absolute;
     left: -2000px;
     top: 0;
     z-index: 1110;
@@ -314,7 +314,12 @@ article.uk-article.sam-single-post {
     background: white;
     padding: 10px 30px;
 }
-
+.sam-single-post p {
+    font-size: 2rem;
+}
+.sam-single-post img {
+    margin-bottom: 30px;
+}
 article.uk-article.sam-posts-grid-item {
     max-width: 45%;
     margin: 15px 1%;
@@ -328,12 +333,15 @@ article.uk-article.sam-posts-grid-item {
     article.uk-article.sam-posts-grid-item {
         max-width: unset !important;
     }
+    #share-buttons-post-top a img {
+        max-width: 40px;
+    }
 }
 .sam-posts-grid-container {
     padding-top: 80px;
     text-align: center;
 }
-div#share-buttons {
+div#share-buttons-post-top {
     max-width: 600px;
     display: inline;
     padding-top: 15px;
