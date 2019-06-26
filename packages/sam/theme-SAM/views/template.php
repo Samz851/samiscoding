@@ -64,10 +64,10 @@
             'send_to': 'AW-963596061',
             'user_id': 'replace with value'
         });
-        </script> -->
+        </script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125594266-1"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125594266-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
