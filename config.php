@@ -11,8 +11,8 @@
       'mysql' => 
       array (
         'host' => 'localhost',
-        'user' => 'root',
-        'password' => '',
+        'user' => 'samiscoding',
+        'password' => 'B@ssw0rdR@w@n851',
         'dbname' => 'samiscoding',
         'prefix' => 'pksic_',
       ),
