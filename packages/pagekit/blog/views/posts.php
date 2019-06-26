@@ -1,34 +1,33 @@
 <?php $view->script('posts', 'blog:app/bundle/posts.js', 'vue') ?>
+<div class="uk-margin uk-grid uk-grid-match uk-grid-width-1-1 uk-grid-width-small-1-2 uk-grid-width-large-1-4 uk-grid-width-xlarge-1-6 aos-init aos-animate sam-posts-grid-container" data-uk-grid-margin="" data-uk-grid-match="target: '>div>.uk-panel'" data-aos="fade-up">
+    <?php foreach ($posts as $post) : ?>
+    <article class="uk-article sam-posts-grid-item">
 
-<?php foreach ($posts as $post) : ?>
-<article class="uk-article">
-
-    <?php if ($image = $post->get('image.src')): ?>
-    <a class="uk-display-block" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><img src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>"></a>
-    <?php endif ?>
-
-    <h1 class="uk-article-title"><a href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><?= $post->title ?></a></h1>
-
-    <p class="uk-article-meta">
-        <?= __('Written by %name% on %date%', ['%name%' => $this->escape($post->user->name), '%date%' => '<time datetime="'.$post->date->format(\DateTime::ATOM).'" v-cloak>{{ "'.$post->date->format(\DateTime::ATOM).'" | date "longDate" }}</time>' ]) ?>
-    </p>
-
-    <div class="uk-margin"><?= $post->excerpt ?: $post->content ?></div>
-
-    <ul class="uk-subnav">
-
-        <?php if (isset($post->readmore) && $post->readmore || $post->excerpt) : ?>
-        <li><a href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><?= __('Read more') ?></a></li>
+        <?php if ($image = $post->get('image.src')): ?>
+        <a class="uk-display-block" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><img src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>"></a>
         <?php endif ?>
 
-        <?php if ($post->isCommentable() || $post->comment_count) : ?>
-        <li><a href="<?= $view->url('@blog/id#comments', ['id' => $post->id]) ?>"><?= _c('{0} No comments|{1} %num% Comment|]1,Inf[ %num% Comments', $post->comment_count, ['%num%' => $post->comment_count]) ?></a></li>
-        <?php endif ?>
+        <h1 class="uk-article-title"><a href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><?= $post->title ?></a></h1>
 
-    </ul>
+        <p class="uk-article-meta">
+            <?= __('Written by %name% on %date%', ['%name%' => $this->escape($post->user->name), '%date%' => '<time datetime="'.$post->date->format(\DateTime::ATOM).'" v-cloak>{{ "'.$post->date->format(\DateTime::ATOM).'" | date "longDate" }}</time>' ]) ?>
+        </p>
 
-</article>
-<?php endforeach ?>
+        <div class="uk-margin"><?= $post->excerpt ?: $post->content ?></div>
+
+        <ul class="uk-subnav">
+
+            <?php if (isset($post->readmore) && $post->readmore || $post->excerpt) : ?>
+            <a class="uk-button" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>"><?= __('Read more') ?></a>
+            <?php endif ?>
+
+
+
+        </ul>
+
+    </article>
+    <?php endforeach ?>
+</div>
 
 <?php
 
