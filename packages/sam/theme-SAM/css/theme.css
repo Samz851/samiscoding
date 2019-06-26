@@ -314,6 +314,7 @@ article.uk-article.sam-single-post {
     background: white;
     padding: 10px 30px;
 }
+
 article.uk-article.sam-posts-grid-item {
     max-width: 45%;
     margin: 15px 1%;
@@ -322,6 +323,11 @@ article.uk-article.sam-posts-grid-item {
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(../../../../storage/contact-bg.jpg);
     min-height: 500px;
     vertical-align: top;
+}
+@media only screen and (max-width:515px){
+    article.uk-article.sam-posts-grid-item {
+        max-width: unset !important;
+    }
 }
 .sam-posts-grid-container {
     padding-top: 80px;
