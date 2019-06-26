@@ -6,4 +6,28 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Bixie\\PkFramework\\CodeGenerator\\Assembler\\EntityTypeAssembler' => $vendorDir . '/bixie/pk-framework/src/CodeGenerator/Assembler/EntityTypeAssembler.php',
+    'Bixie\\PkFramework\\CodeGenerator\\Assembler\\FluentSetterAssembler' => $vendorDir . '/bixie/pk-framework/src/CodeGenerator/Assembler/FluentSetterAssembler.php',
+    'Bixie\\PkFramework\\CodeGenerator\\Assembler\\JsonSerializableAssembler' => $vendorDir . '/bixie/pk-framework/src/CodeGenerator/Assembler/JsonSerializableAssembler.php',
+    'Bixie\\PkFramework\\CodeGenerator\\Assembler\\MethodAssembler' => $vendorDir . '/bixie/pk-framework/src/CodeGenerator/Assembler/MethodAssembler.php',
+    'Bixie\\PkFramework\\CodeGenerator\\Assembler\\TraitAssembler' => $vendorDir . '/bixie/pk-framework/src/CodeGenerator/Assembler/TraitAssembler.php',
+    'Bixie\\PkFramework\\Console\\Commands\\TranslateCommand' => $vendorDir . '/bixie/pk-framework/src/Console/Commands/TranslateCommand.php',
+    'Bixie\\PkFramework\\Controller\\FrameworkApiController' => $vendorDir . '/bixie/pk-framework/src/Controller/FrameworkApiController.php',
+    'Bixie\\PkFramework\\Controller\\ImageApiController' => $vendorDir . '/bixie/pk-framework/src/Controller/ImageApiController.php',
+    'Bixie\\PkFramework\\FieldType\\FieldType' => $vendorDir . '/bixie/pk-framework/src/FieldType/FieldType.php',
+    'Bixie\\PkFramework\\FieldType\\FieldTypeBase' => $vendorDir . '/bixie/pk-framework/src/FieldType/FieldTypeBase.php',
+    'Bixie\\PkFramework\\FieldType\\FieldTypeInterface' => $vendorDir . '/bixie/pk-framework/src/FieldType/FieldTypeInterface.php',
+    'Bixie\\PkFramework\\FieldType\\FieldTypeUpload' => $vendorDir . '/bixie/pk-framework/src/FieldType/FieldTypeUpload.php',
+    'Bixie\\PkFramework\\FieldValue\\FieldValue' => $vendorDir . '/bixie/pk-framework/src/FieldValue/FieldValue.php',
+    'Bixie\\PkFramework\\FieldValue\\FieldValueBase' => $vendorDir . '/bixie/pk-framework/src/FieldValue/FieldValueBase.php',
+    'Bixie\\PkFramework\\FieldValue\\FieldValueInterface' => $vendorDir . '/bixie/pk-framework/src/FieldValue/FieldValueInterface.php',
+    'Bixie\\PkFramework\\Field\\FieldBase' => $vendorDir . '/bixie/pk-framework/src/Field/FieldBase.php',
+    'Bixie\\PkFramework\\Field\\FieldInterface' => $vendorDir . '/bixie/pk-framework/src/Field/FieldInterface.php',
+    'Bixie\\PkFramework\\Filter\\FileSizeFilter' => $vendorDir . '/bixie/pk-framework/src/Filter/FileSizeFilter.php',
+    'Bixie\\PkFramework\\FrameworkModule' => $vendorDir . '/bixie/pk-framework/src/FrameworkModule.php',
+    'Bixie\\PkFramework\\Helpers\\DateHelper' => $vendorDir . '/bixie/pk-framework/src/Helpers/DateHelper.php',
+    'Bixie\\PkFramework\\Helpers\\ImageHelper' => $vendorDir . '/bixie/pk-framework/src/Helpers/ImageHelper.php',
+    'Bixie\\PkFramework\\Traits\\CreatedModifiedTrait' => $vendorDir . '/bixie/pk-framework/src/Traits/CreatedModifiedTrait.php',
+    'Bixie\\PkFramework\\Traits\\JsonSerializableTrait' => $vendorDir . '/bixie/pk-framework/src/Traits/JsonSerializableTrait.php',
+    'abeautifulsite\\SimpleImage' => $vendorDir . '/abeautifulsite/simpleimage/src/abeautifulsite/SimpleImage.php',
 );

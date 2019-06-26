@@ -4,9 +4,118 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3514a07990ece15a4f02286e460c2658",
-    "content-hash": "663124390ba6b6a23fa6e7603f0abbef",
+    "hash": "a227486e29dd1968ed694f966ed24550",
+    "content-hash": "5569d6af065c4aa4e78c9511e8c0e740",
     "packages": [
+        {
+            "name": "abeautifulsite/simpleimage",
+            "version": "2.5.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/claviska/SimpleImage.git",
+                "reference": "5be7b5c912b94b85b20e423b9b8bd4680ccaa53b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/5be7b5c912b94b85b20e423b9b8bd4680ccaa53b",
+                "reference": "5be7b5c912b94b85b20e423b9b8bd4680ccaa53b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "abeautifulsite": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nazar Mokrynskyi",
+                    "email": "nazar@mokrynskyi.com",
+                    "homepage": "http://cleverstyle.org/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Cory LaViska",
+                    "homepage": "http://www.abeautifulsite.net/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP class that simplifies working with images",
+            "time": "2015-08-08 06:11:41"
+        },
+        {
+            "name": "bixie/pk-framework",
+            "version": "1.0.4",
+            "dist": {
+                "type": "zip",
+                "url": "/var/www/samiscoding/tmp/packages/bixie-pk-framework-1.0.4.zip",
+                "reference": null,
+                "shasum": "d23128ce2d768ce4843a43bda056484582fd4c37"
+            },
+            "require": {
+                "abeautifulsite/simpleimage": "2.5.*"
+            },
+            "type": "pagekit-extension",
+            "extra": {
+                "icon": "icon.svg"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bixie\\PkFramework\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bixie",
+                    "email": "info@bixie.org",
+                    "homepage": "http://www.bixie.org"
+                }
+            ],
+            "description": "Framework for Bixie extensions."
+        },
+        {
+            "name": "bixie/portfolio",
+            "version": "1.2.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://pagekit.com/package/bixie/portfolio/1.2.0.zip",
+                "reference": null,
+                "shasum": "4b96fb64cf470eed48208e7ecb8e7e82f0533930"
+            },
+            "require": {
+                "abeautifulsite/simpleimage": "2.5.*"
+            },
+            "type": "pagekit-extension",
+            "extra": {
+                "icon": "icon.svg",
+                "scripts": "scripts.php"
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bixie",
+                    "email": "info@bixie.org",
+                    "homepage": "http://portfolio.bixie.org"
+                }
+            ],
+            "description": "Create a beautiful portfolio in your Pagekit site"
+        },
         {
             "name": "pagekit/blog",
             "version": "1.0.6",

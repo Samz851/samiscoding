@@ -23,7 +23,7 @@ $config['grid_teaser'] .= $teaser_config['columns_xlarge'] ? ' uk-grid-width-xla
 
 ?>
 
-<div class="uk-margin uk-grid uk-grid-match <?= $grid ?>" data-uk-grid-margin data-uk-grid-match="target: '>div>.uk-panel'" data-aos="fade-up">
+<div class="uk-margin uk-grid uk-grid-match <?= $grid ?>" data-uk-grid-margin data-uk-grid-match="target: '>div>.uk-panel'">
 
   <?php foreach ($projects as $project) : ?>
        <?= $view->render("bixie/portfolio/templates/teaser_{$widget->get('teaser.template', 'panel')}.php", compact('project', 'config', 'teaser_config')); ?>

@@ -6,4 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Bixie\\PkFramework\\' => array($vendorDir . '/bixie/pk-framework/src'),
 );

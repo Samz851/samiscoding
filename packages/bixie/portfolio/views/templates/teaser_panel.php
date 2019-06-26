@@ -7,7 +7,7 @@
  */
 $teaser_config = !empty($teaser_config) ? $teaser_config : $config['teaser'];
 ?>
-<div data-uk-filter="<?= implode(',', $project->tags) ?>" data-aos="fade-up">
+<div data-uk-filter="<?= implode(',', $project->tags) ?>">
 	<div class="uk-panel <?= $teaser_config['panel_style'] ?> uk-text-<?= $teaser_config['content_align'] ?>">
 
 		<?php if ($teaser_config['show_image']) : ?>

@@ -38,7 +38,7 @@ $config['project_image_class'] = in_array($config['project']['image_align'], ['r
 		</ul>
 	<?php endif; ?>
 
-	<h1 class="display-2"><?= $project->title ?></h1>
+	<h1 class="uk-article-title"><?= $project->title ?></h1>
 
 	<?php if (!empty($project->subtitle)) : ?>
 		<p class="uk-article-lead"><?= $project->subtitle ?></p>
@@ -138,11 +138,10 @@ $config['project_image_class'] = in_array($config['project']['image_align'], ['r
 
 	<div class="uk-margin uk-grid uk-grid-small <?= $grid ?>" data-uk-grid-margin="">
 		<?php foreach ($project->images as $image) : ?>
-			<div style="max-width:46%; display:inline-block;">
+			<div>
 					<figure class="<?= $config['project']['overlay'] ?>">
-						<a href="<?= $view->portfolioimage('url', [$image, $config['project']['thumbsize']]) ?>">
 						<img src="<?= $view->portfolioimage('url', [$image, $config['project']['thumbsize']]) ?>" alt="<?= $image['title'] ?>"
-							 class="<?= $config['project']['overlay_image_effect'] ?>"> </a>
+							 class="<?= $config['project']['overlay_image_effect'] ?>">
 						<?php if (!empty($config['project']['overlay'])): ?>
 						<div class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center <?= $config['project']['overlay_position'] ?> <?= $config['project']['overlay_effect'] ?>">
 							<div>
