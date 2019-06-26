@@ -1,7 +1,7 @@
 <?php return array (
   'application' => 
   array (
-    'debug' => true,
+    'debug' => false,
   ),
   'database' => 
   array (
@@ -11,8 +11,8 @@
       'mysql' => 
       array (
         'host' => 'localhost',
-        'user' => 'samiscoding',
-        'password' => 'gT6TS&L6Ru0z',
+        'user' => 'root',
+        'password' => '',
         'dbname' => 'samiscoding',
         'prefix' => 'pksic_',
       ),
@@ -36,9 +36,5 @@
   'system/finder' => 
   array (
     'storage' => '',
-  ),
-  'debug' => 
-  array (
-    'enabled' => false,
   ),
 );

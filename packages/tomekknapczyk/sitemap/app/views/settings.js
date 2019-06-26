@@ -19,7 +19,7 @@ module.exports = {
 
         generate: function () {
             this.$notify('Please wait until "Sitemap generated" message will show. It can take some time.', {status:'warning', timeout: 0});
-            this.$http.post('/admin/sitemap/generate',{config: this.config}).then(function (data) {
+            this.$http.post('/samiscoding/admin/sitemap/generate',{config: this.config}).then(function (data) {
                         this.$notify('Sitemap generated.');
                     }, function (data) {
                         this.$notify(data, 'danger');
