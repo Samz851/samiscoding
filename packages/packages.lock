@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e78a71bf07cdf1b4a5b9bf47e6783fda",
-    "content-hash": "7b81b1193ed16206f22e498f03ab2651",
+    "hash": "4273ddd78af3af94c86450764e95c59d",
+    "content-hash": "ac1e8a0f9b2aa2eeea48804654e24d61",
     "packages": [
         {
             "name": "abeautifulsite/simpleimage",
@@ -115,32 +115,6 @@
                 }
             ],
             "description": "Create a beautiful portfolio in your Pagekit site"
-        },
-        {
-            "name": "norrnext/social-share",
-            "version": "1.0.4",
-            "dist": {
-                "type": "zip",
-                "url": "/var/www/samiscoding/tmp/packages/norrnext-social-share-1.0.4.zip",
-                "reference": null,
-                "shasum": "9c445777513e82f11b484602ea993be449eba9e4"
-            },
-            "type": "pagekit-extension",
-            "extra": {
-                "icon": "icon.svg",
-                "scripts": "scripts.php"
-            },
-            "license": [
-                "GPLv3+"
-            ],
-            "authors": [
-                {
-                    "name": "NorrNext",
-                    "email": "support@norrnext.com",
-                    "homepage": "https://www.norrnext.com"
-                }
-            ],
-            "description": "This plugin displays share buttons in blog posts."
         },
         {
             "name": "pagekit/blog",
