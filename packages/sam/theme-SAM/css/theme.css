@@ -356,3 +356,7 @@ div#share-buttons-post-top {
 #share-buttons-grid a img {
     max-width: 40px;
 }
+.tm-background {
+    background: #74b3e7 url(../img/crocus.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
