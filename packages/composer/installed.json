@@ -1,51 +1,13 @@
 [
     {
-        "name": "pagekit/theme-one",
-        "version": "1.0.0",
-        "version_normalized": "1.0.0.0",
-        "dist": {
-            "type": "zip",
-            "url": "https://pagekit.com/package/pagekit/theme-one/1.0.0.zip",
-            "reference": null,
-            "shasum": "6d49b3cbb1de15b4a3947890e7935b13de76f7f8"
-        },
-        "archive": {
-            "exclude": [
-                "node_modules",
-                "!/app",
-                "!/css",
-                "/app/assets",
-                "gulpfile.js",
-                "bower.js",
-                "package.js"
-            ]
-        },
-        "type": "pagekit-theme",
-        "extra": {
-            "image": "image.jpg"
-        },
-        "installation-source": "dist",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Pagekit",
-                "email": "info@pagekit.com",
-                "homepage": "http://pagekit.com"
-            }
-        ],
-        "description": "Pagekit's default theme."
-    },
-    {
         "name": "pagekit/blog",
-        "version": "1.0.6",
-        "version_normalized": "1.0.6.0",
+        "version": "1.0.7",
+        "version_normalized": "1.0.7.0",
         "dist": {
             "type": "zip",
-            "url": "https://pagekit.com/package/pagekit/blog/1.0.6.zip",
+            "url": "https://pagekit.com/package/pagekit/blog/1.0.7.zip",
             "reference": null,
-            "shasum": "7ef5297116a4bba1fe738b2f6997d667ed04dbff"
+            "shasum": "690786ff41645c25d7c180a3781ddc51205bb0ad"
         },
         "archive": {
             "exclude": [
@@ -72,26 +34,25 @@
         "description": "A blog extensions with a built-in comment system."
     },
     {
-        "name": "pastheme/dpnblog",
-        "version": "2.1.4",
-        "version_normalized": "2.1.4.0",
+        "name": "pagekit/theme-one",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
         "dist": {
             "type": "zip",
-            "url": "https://pagekit.com/package/pastheme/dpnblog/2.1.4.zip",
+            "url": "https://pagekit.com/package/pagekit/theme-one/1.0.1.zip",
             "reference": null,
-            "shasum": ""
+            "shasum": "2acaae7558661bdf71b7cea03055069d02e8d47c"
         },
         "archive": {
             "exclude": [
-                "node_modules",
-                "!/app"
+                "!/app",
+                "!/css",
+                "/app/assets"
             ]
         },
-        "type": "pagekit-extension",
+        "type": "pagekit-theme",
         "extra": {
-            "icon": "icon.svg",
-            "image": "image.svg",
-            "scripts": "scripts.php"
+            "image": "image.jpg"
         },
         "installation-source": "dist",
         "license": [
@@ -99,192 +60,11 @@
         ],
         "authors": [
             {
-                "name": "Wibuzz CO",
-                "email": "me@wibuzz.co",
-                "homepage": "http://wibuzz.co"
+                "name": "Pagekit",
+                "email": "info@pagekit.com",
+                "homepage": "http://pagekit.com"
             }
         ],
-        "description": "An Advanced Blog Extension with some extra features."
-    },
-    {
-        "name": "abeautifulsite/simpleimage",
-        "version": "2.5.6",
-        "version_normalized": "2.5.6.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/claviska/SimpleImage.git",
-            "reference": "5be7b5c912b94b85b20e423b9b8bd4680ccaa53b"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/5be7b5c912b94b85b20e423b9b8bd4680ccaa53b",
-            "reference": "5be7b5c912b94b85b20e423b9b8bd4680ccaa53b",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2015-08-08 06:11:41",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.5-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "abeautifulsite": "src/"
-            }
-        },
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Nazar Mokrynskyi",
-                "email": "nazar@mokrynskyi.com",
-                "homepage": "http://cleverstyle.org/",
-                "role": "Developer"
-            },
-            {
-                "name": "Cory LaViska",
-                "homepage": "http://www.abeautifulsite.net/",
-                "role": "Developer"
-            }
-        ],
-        "description": "A PHP class that simplifies working with images"
-    },
-    {
-        "name": "bixie/pk-framework",
-        "version": "1.0.4",
-        "version_normalized": "1.0.4.0",
-        "dist": {
-            "type": "zip",
-            "url": "/var/www/samiscoding/tmp/packages/bixie-pk-framework-1.0.4.zip",
-            "reference": null,
-            "shasum": "d23128ce2d768ce4843a43bda056484582fd4c37"
-        },
-        "require": {
-            "abeautifulsite/simpleimage": "2.5.*"
-        },
-        "type": "pagekit-extension",
-        "extra": {
-            "icon": "icon.svg"
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Bixie\\PkFramework\\": "src"
-            }
-        },
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Bixie",
-                "email": "info@bixie.org",
-                "homepage": "http://www.bixie.org"
-            }
-        ],
-        "description": "Framework for Bixie extensions."
-    },
-    {
-        "name": "bixie/portfolio",
-        "version": "1.2.0",
-        "version_normalized": "1.2.0.0",
-        "dist": {
-            "type": "zip",
-            "url": "https://pagekit.com/package/bixie/portfolio/1.2.0.zip",
-            "reference": null,
-            "shasum": "4b96fb64cf470eed48208e7ecb8e7e82f0533930"
-        },
-        "require": {
-            "abeautifulsite/simpleimage": "2.5.*"
-        },
-        "type": "pagekit-extension",
-        "extra": {
-            "icon": "icon.svg",
-            "scripts": "scripts.php"
-        },
-        "installation-source": "dist",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Bixie",
-                "email": "info@bixie.org",
-                "homepage": "http://portfolio.bixie.org"
-            }
-        ],
-        "description": "Create a beautiful portfolio in your Pagekit site"
-    },
-    {
-        "name": "tomekknapczyk/sitemap",
-        "version": "1.0.0",
-        "version_normalized": "1.0.0.0",
-        "dist": {
-            "type": "zip",
-            "url": "https://pagekit.com/package/tomekknapczyk/sitemap/1.0.0.zip",
-            "reference": null,
-            "shasum": "cdb4a54c73f60a0987f07461e20645451080248a"
-        },
-        "archive": {
-            "exclude": [
-                "node_modules",
-                "!/app"
-            ]
-        },
-        "type": "pagekit-extension",
-        "extra": {
-            "icon": "icon.svg",
-            "scripts": "scripts.php"
-        },
-        "installation-source": "dist",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Tomek Knapczyk",
-                "email": "tomekknapczyk@gmail.com",
-                "homepage": "http://programista.io"
-            }
-        ],
-<<<<<<< HEAD
-        "description": "Sitemap generator"
-=======
-        "description": "An Advanced Blog Extension with some extra features."
-    },
-    {
-        "name": "norrnext/social-share",
-        "version": "1.0.4",
-        "version_normalized": "1.0.4.0",
-        "dist": {
-            "type": "zip",
-            "url": "C:\\wamp64\\www\\samiscoding/tmp/packages\\norrnext-social-share-1.0.4.zip",
-            "reference": null,
-            "shasum": "9c445777513e82f11b484602ea993be449eba9e4"
-        },
-        "type": "pagekit-extension",
-        "extra": {
-            "icon": "icon.svg",
-            "scripts": "scripts.php"
-        },
-        "installation-source": "dist",
-        "license": [
-            "GPLv3+"
-        ],
-        "authors": [
-            {
-                "name": "NorrNext",
-                "email": "support@norrnext.com",
-                "homepage": "https://www.norrnext.com"
-            }
-        ],
-        "description": "This plugin displays share buttons in blog posts."
->>>>>>> c607e97e9933326daa8c4a42edbeeb819346bf47
+        "description": "Pagekit's default theme."
     }
 ]
