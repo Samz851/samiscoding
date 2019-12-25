@@ -309,6 +309,61 @@
             submitHandler: function(form) {
     
                 var sLoader = $('.submit-loader');
+                var data = {
+                    form: $(this).attr('cl-form-type'),
+                    formData: $(form).serialize()
+                }
+                $.ajax({
+    
+                    type: "POST",
+                    url: "packages/sam/theme-SAM/inc/sendEmail.php",
+                    data: data,
+                    beforeSend: function() { 
+    
+                        sLoader.slideDown("slow");
+    
+                    },
+                    success: function(msg) {
+    
+                        // Message was sent
+                        if (msg == 'OK') {
+                            sLoader.slideUp("slow"); 
+                            $('.message-warning').fadeOut();
+                            $('#contactForm').fadeOut();
+                            $('.message-success').fadeIn();
+                        }
+                        // There was an error
+                        else {
+                            sLoader.slideUp("slow"); 
+                            $('.message-warning').html(msg);
+                            $('.message-warning').slideDown("slow");
+                        }
+    
+                    },
+                    error: function() {
+    
+                        sLoader.slideUp("slow"); 
+                        $('.message-warning').html("Something went wrong. Please try again.");
+                        $('.message-warning').slideDown("slow");
+    
+                    }
+    
+                });
+            }
+    
+        });
+    };
+
+   /* Benchmark Form
+    * ------------------------------------------------------ */
+   var clBenchmarkForm = function(){
+        /* local validation */
+        $('#formmaker-form').validate({
+        
+            /* submit via ajax */
+            submitHandler: function(form) {
+    
+                var sLoader = $('.submit-loader');
     
                 $.ajax({
     
@@ -349,8 +404,7 @@
             }
     
         });
-    };
-
+   }
 
    /* Animate On Scroll
     * ------------------------------------------------------ */
