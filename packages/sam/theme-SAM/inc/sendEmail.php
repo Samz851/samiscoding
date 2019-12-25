@@ -14,7 +14,7 @@ $error = false;
 parse_str($_POST['formData'], $_POST['formData']);
 if($_POST) {
 
-    if($_POST['form'] = 'benchmark'){
+    if($_POST['form'] == 'benchmark'){
         $email = "sam@samiscoding.com";
         $name = "SAM DevOps";
         $subject = "Request for Benchmark Report";
@@ -23,11 +23,23 @@ if($_POST) {
             $contact_message .= "<tr><td>" . trim(stripslashes($label)) . ":</td><td>" . trim(stripslashes($value)) . "</td></tr>";
         };
         $contact_message .= "</table></div></body></html>";
+        // Validate url
+            //URL
+        if (!preg_match("/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/", $_POST['formData']['url'])){
+            $error['message'] = "Please enter a valid URL of your website/application.";
+        }
     } else {
         $name = trim(stripslashes($_POST['formData']['contactName']));
         $email = trim(stripslashes($_POST['formData']['contactEmail']));
         $subject = trim(stripslashes($_POST['formData']['contactSubject']));
-        $contact_message = trim(stripslashes($_POST['formData']['contactMessage']));
+        $detail = trim(stripslashes($_POST['formData']['contactMessage']));
+        // Set Message
+        $contact_message = "Email from: " . $name . "<br />";
+        $contact_message .= "Email address: " . $email . "<br />";
+        $contact_message .= "Email subject: " . $subject . "<br />";
+        $contact_message .= "Message: <br />";
+        $contact_message .= $detail;
+        $contact_message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
     }
     
 
@@ -45,23 +57,6 @@ if($_POST) {
     }
     // Subject
     if ($subject == '') { $subject = "Contact Form Submission"; }
-
-    //URL
-    if (!preg_match("/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/", $_POST['formData']['url'])){
-        $error['message'] = "Please enter a valid URL of your website/application.";
-    }
-
-
-    // Set Message
-    // $message = "Email from: " . $name . "<br />";
-    // $message .= "Email address: " . $email . "<br />";
-    // $message .= "Email subject: " . $subject . "<br />";
-    // $message .= "Message: <br />";
-    // $message .= $contact_message;
-    // $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
-
-
-
 
     if (!$error) {
         try{
