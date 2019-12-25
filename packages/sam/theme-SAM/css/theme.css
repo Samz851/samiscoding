@@ -360,3 +360,14 @@ div#share-buttons-post-top {
     background: #74b3e7 url(../img/crocus.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
+
+/*** SAM BENCHMARK FORM **/
+#formmaker-form {
+    max-width: 760px;
+    margin: auto;
+    color: white;
+}
+.contact-benchmark .message-success, .contact-benchmark .message-warning {
+    text-align: center;
+    font-size: 2em;
+}
