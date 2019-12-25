@@ -307,6 +307,14 @@ li.uk-pagination-next a.samz-button:hover {
 
 
 /************** BLOG *******************/
+#blogposts .uk-grid div:not(.uk-text-right) {
+    margin: 20px;
+    margin-bottom: 30px;
+}
+#blogposts article .uk-text-right a {
+    font-size: 2rem;
+    font-weight: 600;
+}
 article.uk-article.sam-single-post {
     max-width: 1100px;
     margin: auto;
