@@ -127,7 +127,7 @@ body {
     display: inline-block;
     padding: 25px 10px;
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(../../../../storage/contact-bg.jpg);
-    min-height: 500px;
+    min-height: 420px;
     vertical-align: top;
 }
 
