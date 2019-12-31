@@ -307,7 +307,7 @@
         console.log(formType);
         var data = {
             form: formType,
-            formData: $(form).serialize()
+            formData: $('#contactForm').serialize()
         }
         $.ajax({
 
@@ -363,10 +363,10 @@
     * ------------------------------------------------------ */
    var clBenchmarkForm = function(){
         /* local validation */
-        $('#formmaker-form').validate({
+        // $('#formmaker-form').validate({
         
-            /* submit via ajax */
-            submitHandler: function(form) {
+        //     /* submit via ajax */
+        //     submitHandler: function(form) {
     
                 var sLoader = $('.submit-loader');
     
@@ -374,7 +374,7 @@
     
                     type: "POST",
                     url: "packages/sam/theme-SAM/inc/sendEmail.php",
-                    data: $(form).serialize(),
+                    data: $('#formmaker-form').serialize(),
                     beforeSend: function() { 
     
                         sLoader.slideDown("slow");
@@ -406,9 +406,9 @@
                     }
     
                 });
-            }
+        //     }
     
-        });
+        // });
    }
 
    /* Animate On Scroll
@@ -503,5 +503,6 @@
     })();
         
         //export contact form script
-        return window.clContactForm = clContactForm;
+        window.clContactForm = clContactForm;
+        window.clBenchmarkForm = clBenchmarkForm;
 })(jQuery);
