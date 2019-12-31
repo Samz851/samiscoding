@@ -127,9 +127,11 @@
         <?php $view->script('util', 'theme:js/util.js') ?>
         <?php $view->script('popover', 'theme:js/popover.js') ?>
         <?php $view->script('modal', 'theme:js/modal.js') ?>
-	<?php $view->script('d3', 'packages/sam/theme-SAM/js/d3.v4.min.js', []) ?>
-	<?php $view->script('topojson', 'packages/sam/theme-SAM/js/topojson.v2.min.js', [], ['defer'=> true])?>
-	<?php $view->script('main', 'packages/sam/theme-SAM/js/main.js', [], ['defer' => true]) ?>
-	<?php $view->script('theme', 'theme:js/theme.js', [], ['defer' => true]) ?>
+        <?php $view->script('d3', 'packages/sam/theme-SAM/js/d3.v4.min.js', []) ?>
+        <?php $view->script('topojson', 'packages/sam/theme-SAM/js/topojson.v2.min.js', [], ['defer'=> true])?>
+        <?php $view->script('main', 'packages/sam/theme-SAM/js/main.js', [], ['defer' => true]) ?>
+        <?php $view->script('theme', 'theme:js/theme.js', [], ['defer' => true]) ?>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     </body>
 </html>
