@@ -327,7 +327,7 @@
                     sLoader.slideUp("slow"); 
                     $('.message-warning1').fadeOut();
                     $('#contactForm, #formmaker-form').fadeOut();
-                    $('.message-success').fadeIn();
+                    $('.message-success1').fadeIn();
                 }
                 // There was an error
                 else {
