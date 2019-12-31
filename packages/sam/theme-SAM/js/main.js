@@ -499,6 +499,7 @@
         clAOS();
         clAjaxChimp();
         clBackToTop();
+        clBenchmarkForm();
     })();
         
         //export contact form script
