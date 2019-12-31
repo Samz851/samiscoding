@@ -114,6 +114,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: black;
+    overflow-x: hidden;
 }
 #sam-portfolio-sidebar {
 	max-width: 90%;

@@ -501,5 +501,6 @@
         clBackToTop();
     })();
         
-        
+        //export contact form script
+        return clContactForm;
 })(jQuery);
