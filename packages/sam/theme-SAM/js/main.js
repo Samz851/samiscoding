@@ -392,7 +392,7 @@
                         if (msg == 'OK') {
                             sLoader.slideUp("slow"); 
                             $('.message-warning1').fadeOut();
-                            $('#contactForm').fadeOut();
+                            $('#formmaker-form').fadeOut();
                             $('.message-success1').fadeIn();
                         }
                         // There was an error

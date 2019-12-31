@@ -380,3 +380,9 @@ div#share-buttons-post-top {
     text-align: center;
     font-size: 2em;
 }
+.contact-benchmark .message-success1 {
+    color: white;
+}
+.contact-benchmark .message-warning1 {
+    color: rgb(133, 0, 0);
+}
