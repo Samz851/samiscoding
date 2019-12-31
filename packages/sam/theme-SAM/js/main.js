@@ -502,5 +502,5 @@
     })();
         
         //export contact form script
-        return clContactForm;
+        return window.clContactForm = clContactForm;
 })(jQuery);
