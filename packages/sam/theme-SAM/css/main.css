@@ -3156,7 +3156,7 @@ html.no-csstransitions .home-content__main {
     width: 100%;
 }
 
-.message-warning {
+.message-warning1 {
     color: #ff6163;
 }
 
@@ -3164,7 +3164,7 @@ html.no-csstransitions .home-content__main {
     color: #33a998;
 }
 
-.message-warning i, .message-success i {
+.message-warning1 i, .message-success1 i {
     margin-right: 10px;
     font-size: 1.2rem;
 }
@@ -3290,7 +3290,7 @@ html.no-csstransitions .home-content__main {
     .contact-secondary::before {
         display: none;
     }
-    .message-warning, .message-success {
+    .message-warning1, .message-success1 {
         margin-bottom: 6rem;
     }
 }
