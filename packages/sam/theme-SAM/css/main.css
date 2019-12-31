@@ -3145,8 +3145,8 @@ html.no-csstransitions .home-content__main {
     margin: 0;
 }
 
-.message-warning, 
-.message-success {
+.message-warning1, 
+.message-success1 {
     display: none;
     background: #111111;
     font-size: 1.5rem;
