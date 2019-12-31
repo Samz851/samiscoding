@@ -300,62 +300,63 @@
 
    /* Contact Form
     * ------------------------------------------------------ */
-    var clContactForm = function() {
-        
-        /* local validation */
-        $('#contactForm, #formmaker-form').validate({
-        
-            /* submit via ajax */
-            submitHandler: function(form) {
-                grecaptcha.execute();
-                var sLoader = $('.submit-loader');
-                var formType = $('form').attr('cl-form-type');
-                console.log(formType);
-                var data = {
-                    form: formType,
-                    formData: $(form).serialize()
-                }
-                $.ajax({
-    
-                    type: "POST",
-                    url: "packages/sam/theme-SAM/inc/sendEmail.php",
-                    contentType: 'application/json',
-                    data: JSON.stringify(data),
-                    beforeSend: function() { 
-    
-                        sLoader.slideDown("slow");
-    
-                    },
-                    success: function(msg) {
-    
-                    // Message was sent
-                        if (msg == 'OK' ) {
-                            sLoader.slideUp("slow"); 
-                            $('.message-warning').fadeOut();
-                            $('#contactForm, #formmaker-form').fadeOut();
-                            $('.message-success').fadeIn();
-                        }
-                        // There was an error
-                        else {
-                            sLoader.slideUp("slow"); 
-                            $('.message-warning').html(msg);
-                            $('.message-warning').slideDown("slow");
-                        }
+    var clContactForm = function(token) {
+        console.log(token)
+        var sLoader = $('.submit-loader');
+        var formType = $('form').attr('cl-form-type');
+        console.log(formType);
+        var data = {
+            form: formType,
+            formData: $(form).serialize()
+        }
+        $.ajax({
 
-    
-                    },
-                    error: function() {
-    
-                        sLoader.slideUp("slow"); 
-                        $('.message-warning').html("Something went wrong. Please try again. or contact us directly at <a href='mailto:sam@samiscoding.com'><strong>SAM@samiscoding.com</strong></a>");
-                        $('.message-warning').slideDown("slow");
-    
-                    }
-    
-                });
+            type: "POST",
+            url: "packages/sam/theme-SAM/inc/sendEmail.php",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            beforeSend: function() { 
+
+                sLoader.slideDown("slow");
+
+            },
+            success: function(msg) {
+
+            // Message was sent
+                if (msg == 'OK' ) {
+                    sLoader.slideUp("slow"); 
+                    $('.message-warning').fadeOut();
+                    $('#contactForm, #formmaker-form').fadeOut();
+                    $('.message-success').fadeIn();
+                }
+                // There was an error
+                else {
+                    sLoader.slideUp("slow"); 
+                    $('.message-warning').html(msg);
+                    $('.message-warning').slideDown("slow");
+                }
+
+
+            },
+            error: function() {
+
+                sLoader.slideUp("slow"); 
+                $('.message-warning').html("Something went wrong. Please try again. or contact us directly at <a href='mailto:sam@samiscoding.com'><strong>SAM@samiscoding.com</strong></a>");
+                $('.message-warning').slideDown("slow");
+
             }
-    
+
         });
+        /* local validation */
+        // $('#contactForm, #formmaker-form').validate({
+        
+        //     /* submit via ajax */
+        //     submitHandler: function(form) {
+    
+
+        //     }
+    
+        // });
     };
 
    /* Benchmark Form
@@ -494,11 +495,12 @@
         clSlickSlider();
         clPlaceholder();
         clAlertBoxes();
-        clContactForm();
+        // clContactForm();
         clAOS();
         clAjaxChimp();
         clBackToTop();
     })();
         
-        
+        //export contact form script
+        return window.clContactForm = clContactForm;
 })(jQuery);
