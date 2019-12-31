@@ -380,7 +380,7 @@
     
                     type: "POST",
                     url: "packages/sam/theme-SAM/inc/sendEmail.php",
-                    data: data,
+                    data: JSON.stringify(data),
                     beforeSend: function() { 
     
                         sLoader.slideDown("slow");
