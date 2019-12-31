@@ -325,15 +325,15 @@
             // Message was sent
                 if (msg == 'OK' ) {
                     sLoader.slideUp("slow"); 
-                    $('.message-warning').fadeOut();
+                    $('.message-warning1').fadeOut();
                     $('#contactForm, #formmaker-form').fadeOut();
                     $('.message-success').fadeIn();
                 }
                 // There was an error
                 else {
                     sLoader.slideUp("slow"); 
-                    $('.message-warning').html(msg);
-                    $('.message-warning').slideDown("slow");
+                    $('.message-warning1').html(msg);
+                    $('.message-warning1').slideDown("slow");
                 }
 
 
@@ -341,8 +341,8 @@
             error: function() {
 
                 sLoader.slideUp("slow"); 
-                $('.message-warning').html("Something went wrong. Please try again. or contact us directly at <a href='mailto:sam@samiscoding.com'><strong>SAM@samiscoding.com</strong></a>");
-                $('.message-warning').slideDown("slow");
+                $('.message-warning1').html("Something went wrong. Please try again. or contact us directly at <a href='mailto:sam@samiscoding.com'><strong>SAM@samiscoding.com</strong></a>");
+                $('.message-warning1').slideDown("slow");
 
             }
 
@@ -385,23 +385,23 @@
                         // Message was sent
                         if (msg == 'OK') {
                             sLoader.slideUp("slow"); 
-                            $('.message-warning').fadeOut();
+                            $('.message-warning1').fadeOut();
                             $('#contactForm').fadeOut();
-                            $('.message-success').fadeIn();
+                            $('.message-success1').fadeIn();
                         }
                         // There was an error
                         else {
                             sLoader.slideUp("slow"); 
-                            $('.message-warning').html(msg);
-                            $('.message-warning').slideDown("slow");
+                            $('.message-warning1').html(msg);
+                            $('.message-warning1').slideDown("slow");
                         }
     
                     },
                     error: function() {
     
                         sLoader.slideUp("slow"); 
-                        $('.message-warning').html("Something went wrong. Please try again.");
-                        $('.message-warning').slideDown("slow");
+                        $('.message-warning1').html("Something went wrong. Please try again.");
+                        $('.message-warning1').slideDown("slow");
     
                     }
     
