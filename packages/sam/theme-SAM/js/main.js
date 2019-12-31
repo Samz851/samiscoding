@@ -369,12 +369,18 @@
         //     submitHandler: function(form) {
     
                 var sLoader = $('.submit-loader');
-    
+                var formType = $('form').attr('cl-form-type');
+                console.log(formType);
+                var data = {
+                    form: formType,
+                    formData: $('#formmaker-form').serialize()
+                }
+
                 $.ajax({
     
                     type: "POST",
                     url: "packages/sam/theme-SAM/inc/sendEmail.php",
-                    data: $('#formmaker-form').serialize(),
+                    data: data,
                     beforeSend: function() { 
     
                         sLoader.slideDown("slow");
