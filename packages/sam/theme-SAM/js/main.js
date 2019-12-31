@@ -307,7 +307,9 @@
         
             /* submit via ajax */
             submitHandler: function(form) {
-                grecaptcha.execute();
+                grecaptcha.execute().then(function(token){
+                    console.log(token);
+                });
                 var sLoader = $('.submit-loader');
                 var formType = $('form').attr('cl-form-type');
                 console.log(formType);
