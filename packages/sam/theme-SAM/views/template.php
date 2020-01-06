@@ -9,11 +9,11 @@
          <meta property="fb:app_id" content="493683984705461">
         <?= $view->render('head') ?>
         <!-- CSS  -->
-        <?php $view->style('base', 'theme:css/base.css') ?>
-        <?php $view->style('fonts', 'theme:css/fonts.css') ?>
-        <?php $view->style('main', 'theme:css/main.css') ?>
-        <?php $view->style('vendor', 'theme:css/vendor.css') ?>
-        <?php $view->style('theme', 'theme:css/theme.css') ?>
+        <?php $view->style('base', 'theme:css/minified/base.css') ?>
+        <?php $view->style('fonts', 'theme:css/minified/fonts.css') ?>
+        <?php $view->style('main', 'theme:css/minified/main.css') ?>
+        <?php $view->style('vendor', 'theme:css/minified/vendor.css') ?>
+        <?php $view->style('theme', 'theme:css/minified/theme.css') ?>
         <?php $view->style('theme', 'theme:css/micons/micons.css') ?>
         
         <!-- favicons
@@ -118,14 +118,14 @@
         <?= $view->render('footer') ?>
         <!-- scripts ================================================== -->
 
-        <?php $view->script('modernizr', 'theme:js/modernizr.js', [], ['defer' => true]) ?>
-        <?php $view->script('pace', 'theme:js/pace.min.js', [], ['defer' => true]) ?>
+        <?php $view->script('modernizr', 'theme:js/minified/modernizr.js', [], ['defer' => true]) ?>
+        <?php $view->script('pace', 'theme:js/minified/pace.min.js', [], ['defer' => true]) ?>
         <?php $view->script('jQuery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', []) ?>
         <?php $view->script('plugins', 'packages/sam/theme-SAM/js/plugins.js', [], ['defer' => true]) ?>
-        <?php $view->script('util', 'theme:js/util.js', [], ['defer' => true]) ?>
-        <?php $view->script('modal', 'theme:js/modal.js', [], ['defer' => true]) ?>
-        <?php $view->script('main', 'packages/sam/theme-SAM/js/main.js', [], ['defer' => true]) ?>
-        <?php $view->script('theme', 'theme:js/theme.js', [], ['defer' => true]) ?>
+        <?php $view->script('util', 'theme:js/minified/util.js', [], ['defer' => true]) ?>
+        <?php $view->script('modal', 'theme:js/minified/modal.js', [], ['defer' => true]) ?>
+        <?php $view->script('main', 'packages/sam/theme-SAM/js/minified/main.js', [], ['defer' => true]) ?>
+        <?php $view->script('theme', 'theme:js/minified/theme.js', [], ['defer' => true]) ?>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     </body>
