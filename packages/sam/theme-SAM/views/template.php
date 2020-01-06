@@ -9,12 +9,12 @@
          <meta property="fb:app_id" content="493683984705461">
         <?= $view->render('head') ?>
         <!-- CSS  -->
-        <?php $view->style('bootstrap', 'theme:css/bootstrap.min.css') ?>
         <?php $view->style('base', 'theme:css/base.css') ?>
         <?php $view->style('fonts', 'theme:css/fonts.css') ?>
         <?php $view->style('main', 'theme:css/main.css') ?>
         <?php $view->style('vendor', 'theme:css/vendor.css') ?>
         <?php $view->style('theme', 'theme:css/theme.css') ?>
+        <?php $view->style('theme', 'theme:css/micons/micons.css') ?>
         
         <!-- favicons
         ================================================== -->
