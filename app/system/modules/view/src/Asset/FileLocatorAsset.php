@@ -17,9 +17,9 @@ class FileLocatorAsset extends FileAsset
 
         $path = App::file()->getUrl($path);
 
-        if ($version = $this->getOption('version')) {
-            $path .= (false === strpos($path, '?') ? '?' : '&') . 'v=' . $version;
-        }
+        // if ($version = $this->getOption('version')) {
+        //     $path .= (false === strpos($path, '?') ? '?' : '&') . 'v=' . $version;
+        // }
 
         return $path;
     }
