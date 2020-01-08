@@ -29,3 +29,5 @@ document.addEventListener('submit', function(data){$('#about .section-header').h
     })();
 
 })(jQuery);
+var observer = lozad();
+observer.observe();
