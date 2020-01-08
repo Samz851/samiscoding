@@ -22,7 +22,7 @@ document.addEventListener('submit', function(data){$('#about .section-header').h
         })
     };
 
-
+// INIT ALL
     (function samInit() {
         samModal();
         samBackModal();
